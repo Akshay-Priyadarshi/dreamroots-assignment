@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "b98e5bf5-ed50-422e-b43b-59e6f9de3b5c",
+		"name": "Dreamroots Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11685711"
+	},
+	"item": [
+		{
+			"name": "HealthCheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/HealthCheck",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"HealthCheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNumber",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/AddNumber/abc",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"AddNumber",
+						"abc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListNumbers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/ListNumbers",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"ListNumbers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
